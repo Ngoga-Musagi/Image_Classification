@@ -1,2 +1,2 @@
 # Image_Classification
-Python Machine Learnign project
+Python Machine Learning project
