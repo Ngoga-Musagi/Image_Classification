@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Uplaod Image for Classification</h2>
+
+    
+    <br>
+   
+    <form method="post" enctype="multipart/form-data" action="predictImage">
+  
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label> </div> <input name="filePath" type="file"><br><br>
+ <br>
+
+ 
+ <input type="submit" value="Submit" ></div>
+    <h1>The Image Classification is the {{predictedLabel}}</h1>
+    <img src={{filePathName}} alt='Imagename'>
+    {{filePathName}}
+    
+</form>
+</body>
+</html>
